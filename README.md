@@ -15,7 +15,7 @@ instruction specified. The Register File section of the circuit store the value 
 instruction specified. I also implemented more LC-3 instructions such as JMP, LD/LDR, and ST/STR, but ran into a 
 problem with JMP instruction not properly working which I explain later on.
 
-The test code in Assemble is:
+The test code in Assembly is:
 ADD R2, R2 #6
 ADD R1, R1, #6
 AND R3, R2, R1
