@@ -8,12 +8,12 @@ The circuit I made is split into 4 main components:
 
 Circuit's Purpose:
 The processor is run by a clock that causes every state to change in the whole processor. The control unit 
-increments the instruction register and counts through the processes and counts the amount of steps. The ALU is a
-combinational circuit that is primarily has 3 LC-3 operations which are ADD, AND, and NOT. It calculates all three
-of these operations given an certain input. It uses a multiplexer to pick the correct output based on the 
-instruction specified. The Register File section of the circuit store the value output of the main given the 
+increments the instruction register counts through the processes and counts the number of steps. The ALU is a
+combinational circuit that primarily has 3 LC-3 operations: ADD, AND, and NOT. It calculates all three
+of these operations given a certain input. It uses a multiplexer to pick the correct output based on the 
+instruction specified. The Register File section of the circuit stores the value output of the main given the 
 instruction specified. I also implemented more LC-3 instructions such as JMP, LD/LDR, and ST/STR, but ran into a 
-problem with JMP instruction not properly working which I explain later on.
+problem with JMP instruction not properly working which I explained later on.
 
 The test code in Assembly is:
 ADD R2, R2 #6
@@ -44,9 +44,9 @@ c100 0000 0000
 6ccf
 
 Unusual Behavior:
-Code is good for most instructions such as ADD, AND, NOT, ST/STR, and LD/LDR because they resulted the correct
+Code is good for most instructions such as ADD, AND, NOT, ST/STR, and LD/LDR because they result in the correct
 output of the instruction when you input the code in hex into the ram; however, for JMP instructions, the code 
-does not work for some reason as it just keeps looping. It is suppose to jump to the next specific address instead 
-of looping. The JMP instructions might be fixed by changing some stuff in the Main circuit and maybe some 
-changes in the Control Unit given more time to find out the exact reason why it is causing this weird looping
+does not work for some reason as it just keeps looping. It should jump to the next specific address instead 
+of looping. The JMP instructions could be fixed by changing some stuff in the Main circuit and some 
+changes in the Control Unit giving more time to find out the exact reason why it is causing this weird looping
 to happen.
