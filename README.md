@@ -24,18 +24,18 @@ The test code in Assembly is:
 <br>NOT R1, R1
 <br>JMP R4
 
-<br>.FILL x0000
+.FILL x0000
 <br>.FILL x0000
 <br>.FILL x0000
 <br>.FILL x0000
 <br>.FILL x0000
 
-<br>ST R4, x0015
+ST R4, x0015
 <br>STR R2, R2, #15
 <br>LD R5, x0015
 <br>LDR R6, R3, #15
 
-<br>The code in hex tested for inputs to the RAM is:
+The code in hex tested for inputs to the RAM is:
 <br>14a6 1266 5681 
 <br>5260 18c2 927f 
 <br>c100 0000 0000 
