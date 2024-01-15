@@ -16,32 +16,32 @@ instruction specified. I also implemented more LC-3 instructions such as JMP, LD
 problem with JMP instruction not properly working which I explained later on.
 
 The test code in Assembly is:
-ADD R2, R2 #6
-ADD R1, R1, #6
-AND R3, R2, R1
-AND R1, R1, #0
-ADD R4, R3, R2
-NOT R1, R1
-JMP R4
+<br>ADD R2, R2 #6
+<br>ADD R1, R1, #6
+<br>AND R3, R2, R1
+<br>AND R1, R1, #0
+<br>ADD R4, R3, R2
+<br>NOT R1, R1
+<br>JMP R4
 
-.FILL x0000
-.FILL x0000
-.FILL x0000
-.FILL x0000
-.FILL x0000
+<br>.FILL x0000
+<br>.FILL x0000
+<br>.FILL x0000
+<br>.FILL x0000
+<br>.FILL x0000
 
-ST R4, x0015
-STR R2, R2, #15
-LD R5, x0015
-LDR R6, R3, #15
+<br>ST R4, x0015
+<br>STR R2, R2, #15
+<br>LD R5, x0015
+<br>LDR R6, R3, #15
 
-The code in hex tested for inputs to the RAM is:
-14a6 1266 5681 
-5260 18c2 927f 
-c100 0000 0000 
-0000 0000 0000 
-3808 748f 2a06 
-6ccf
+<br>The code in hex tested for inputs to the RAM is:
+<br>14a6 1266 5681 
+<br>5260 18c2 927f 
+<br>c100 0000 0000 
+<br>0000 0000 0000 
+<br>3808 748f 2a06 
+<br>6ccf
 
 Unusual Behavior:
 Code is good for most instructions such as ADD, AND, NOT, ST/STR, and LD/LDR because they result in the correct
