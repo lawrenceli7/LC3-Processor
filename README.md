@@ -1,6 +1,6 @@
 # LC3-Processor
 
-## Split into 4 main components
+## Split into 4 components
 - Main
 - Control Unit
 - ALU
