@@ -1,9 +1,9 @@
 # LC3-Processor
 
-## The circuit I made is split into 4 main components
-- The Main
-- The Control Unit
-- The ALU
+## Split into 4 main components
+- Main
+- Control Unit
+- ALU
 - Register File
 
 ## Circuit's Purpose
